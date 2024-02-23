@@ -5,22 +5,24 @@ This repository contains an ETL pipeline for scraping a books website. It includ
 Following the extraction, the pipeline processes the data, perform some data transformation and loads it into a BigQuery database. 
 
 
-Data Extraction:
+1. Data Extraction:
 
-Use HTTP requests to retrieve the HTML content from "http://books.toscrape.com/".
+- Use HTTP requests to retrieve the HTML content from "http://books.toscrape.com/".
 The Parsel library is then used to parse the HTML and extract the book data.
-Data Transformation:
 
-The extracted data is converted into a structured format using Pandas, forming a DataFrame.
+2. Data Transformation:
+
+- The extracted data is converted into a structured format using Pandas, forming a DataFrame.
 Price and currency are split into separate columns, and ratings are converted from text to integers.
-Data Loading:
 
-Finally, the data is loaded into a BigQuery table using the to_gbq method from Pandas, which interfaces with the Google BigQuery API.
+3. Data Loading:
+
+- Finally, the data is loaded into a BigQuery table using the to_gbq method from Pandas, which interfaces with the Google BigQuery API.
 Tools and Languages:
 
-The programming language used is Python.
-Libraries involved include requests, Parsel, Pandas, and Google Cloud BigQuery client libraries.
-The Google OAuth2 library is used for authenticating with Google Cloud services.
-Flow of Data:
+4. Tech Stack
+- Python.
+- Libraries involved include requests, Parsel, Pandas, and Google Cloud BigQuery client libraries. The Google OAuth2 library is used for authenticating with Google Cloud services.
 
-Data flows from the source website through the extraction process, into a DataFrame where it is transformed, and finally into BigQuery.
+5. Flow of Data:
+Data flows from the source website through the extraction process and transformation process, and finally loaded into a BigQuery table.
