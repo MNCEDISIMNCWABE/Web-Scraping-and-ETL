@@ -22,7 +22,7 @@ Tools and Languages:
 
 ### 4. Tech Stack
 - Python.
-- BigQuery
+- BigQuery.
 - Libraries: requests, Parsel, Pandas, and Google Cloud BigQuery client libraries for authenticating with Google Cloud services.
 
 ### 5. Flow of Data:
