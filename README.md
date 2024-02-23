@@ -18,7 +18,6 @@ Price and currency are split into separate columns, and ratings are converted fr
 ### 3. Data Loading
 
 - Finally, the data is loaded into a BigQuery table using the to_gbq method from Pandas, which interfaces with the Google BigQuery API.
-Tools and Languages:
 
 ### 4. Tech Stack
 - Python.
