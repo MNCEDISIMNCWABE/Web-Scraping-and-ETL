@@ -99,10 +99,11 @@ def load_to_bigquery(df, bq_project_id, bq_dataset_id, bq_table_id, google_servi
 
 #Orchastrate the pipeline
 
-bq_project_id = 'bright-arc-328707'
-bq_dataset_id = 'test'
-bq_table_id = 'books_data'
-google_service_account_file = Credentials.from_service_account_file('C:/Users/leemn/OneDrive/Documents/personal google service acount/bright-arc-328707-b5e2d782b48b.json')
+bq_project_id = 'BQ_project_id'
+bq_dataset_id = 'BQ_dataset_id'
+bq_table_id = 'BQ_table_name'
+path_google_service_account = '/path/to/google/service/account/file'
+google_service_account_file = Credentials.from_service_account_file('path_google_service_account')
 
 if __name__ == "__main__":
     books_data = scrape_books()
