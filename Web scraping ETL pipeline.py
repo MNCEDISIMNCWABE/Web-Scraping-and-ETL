@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[23]:
-
-
 import requests
 from parsel import Selector
 import pandas as pd
@@ -11,10 +5,7 @@ from google.oauth2.service_account import Credentials
 from oauth2client.service_account import ServiceAccountCredentials
 
 
-# ## Extract
-
-# In[24]:
-
+# Extract
 
 def parse_book(book):
     '''
@@ -52,10 +43,7 @@ def scrape_books():
     return items
 
 
-# ## Transform
-
-# In[25]:
-
+#Transform
 
 def convert_to_df(books_data):
     
@@ -91,10 +79,7 @@ def convert_ratings_to_int(df):
     return df
 
 
-# ## Load
-
-# In[26]:
-
+#Load
 
 def load_to_bigquery(df, bq_project_id, bq_dataset_id, bq_table_id, google_service_account_file):
     
@@ -112,10 +97,7 @@ def load_to_bigquery(df, bq_project_id, bq_dataset_id, bq_table_id, google_servi
               if_exists='replace') 
 
 
-# ## Orchastrate the pipeline
-
-# In[27]:
-
+#Orchastrate the pipeline
 
 bq_project_id = 'bright-arc-328707'
 bq_dataset_id = 'test'
@@ -128,10 +110,3 @@ if __name__ == "__main__":
     books_df = split_price_currency(books_df)
     books_df = convert_ratings_to_int(books_df)
     load_to_bigquery(books_df, bq_project_id, bq_dataset_id, bq_table_id, google_service_account_file)
-
-
-# In[ ]:
-
-
-
-
