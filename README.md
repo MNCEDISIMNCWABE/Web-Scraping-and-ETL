@@ -26,4 +26,4 @@ Tools and Languages:
 - Libraries: requests, Parsel, Pandas, and Google Cloud BigQuery client libraries for authenticating with Google Cloud services.
 
 ### 5. Flow of Data:
-Data flows from the source website through the extraction process and transformation process, and finally loaded into a BigQuery table.
+Data flows from the source website through the extraction and transformation process, and finally loaded into a BigQuery table.
