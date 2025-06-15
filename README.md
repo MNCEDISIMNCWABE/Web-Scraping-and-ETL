@@ -11,7 +11,10 @@ Following the extraction, the pipeline processes the data, perform some data tra
 ### 2. Installation and How to Run
 - Clone the repository: ``git clone https://github.com/MNCEDISIMNCWABE/Web-Scraping-and-ETL.git``
 - Install libraries: ``pip install requests parsel pandas pandas-gbq google-auth``
-- Run the script: ``python app.py``
+- Run the script: ``python Web_scraping_ETL_Pipeline.py``
+
+  <img width="889" alt="image" src="https://github.com/user-attachments/assets/d8d7c60b-5044-4363-8fb3-74576244f4da" />
+
 
 ### 3. Data Extraction
 
